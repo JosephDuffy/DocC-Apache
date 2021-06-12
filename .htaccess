@@ -7,3 +7,5 @@ RewriteRule /data/documentation.json VaporDocC.doccarchive/data/documentation/va
 RewriteRule ^(css|js|data|images|downloads|img|videos)\/.*$ VaporDocC.doccarchive/$0 [L]
 
 RewriteRule ^(favicon\.ico|favicon\.svg|theme-settings\.json)$ VaporDocC.doccarchive/$0 [L]
+
+Redirect 302 / /documentation/
