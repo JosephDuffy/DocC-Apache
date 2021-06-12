@@ -2,6 +2,8 @@ RewriteEngine On
 
 RewriteRule ^(documentation|tutorials)\/.*$ VaporDocC.doccarchive/index.html [L]
 
+# Xcode 13.0 beta 1 generated DocC archives without a file at data/documentation.json.
+# Replace "vapordocc" with the name of the name of your product.
 RewriteRule /data/documentation.json VaporDocC.doccarchive/data/documentation/vapordocc.json [L]
 
 RewriteRule ^(css|js|data|images|downloads|img|videos)\/.*$ VaporDocC.doccarchive/$0 [L]
