@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule ^(documentation|tutorials)\/.*$ VaporDocC.doccarchive/index.html [L]
+
+RewriteRule /data/documentation.json VaporDocC.doccarchive/data/documentation/vapordocc.json [L]
+
+RewriteRule ^(css|js|data|images|downloads|img|videos)\/.*$ VaporDocC.doccarchive/$0 [L]
+
+RewriteRule ^(favicon\.ico|favicon\.svg|theme-settings\.json)$ VaporDocC.doccarchive/$0 [L]
