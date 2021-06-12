@@ -9,3 +9,5 @@ RewriteRule ^(css|js|data|images|downloads|img|videos)\/.*$ VaporDocC.doccarchiv
 RewriteRule ^(favicon\.ico|favicon\.svg|theme-settings\.json)$ VaporDocC.doccarchive/$0 [L]
 
 Redirect 302 / /documentation/
+Redirect 302 /documentation /documentation/
+Redirect 302 /tutorials /tutorials/
